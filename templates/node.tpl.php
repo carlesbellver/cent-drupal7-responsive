@@ -86,9 +86,9 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
   
-      <?php if (!$page and $display_submitted): ?>
+      <?php if ($display_submitted): ?>
         <span class="submitted">
-        <?php print t('Posted by') . ' ' . $name; ?> <?php print t('on') . ' ' . $date; ?>
+        <?php print $name; ?> <?php print t('on') . ' ' . print format_date($node->created, 'custom', 'd/m/Y'); ?>
         </span>
       <?php endif; ?>
 
