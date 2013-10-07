@@ -88,7 +88,7 @@
   
       <?php if ($display_submitted): ?>
         <span class="submitted">
-        <?php print $name; ?> <?php print t('on') . ' ' . print format_date($node->created, 'custom', 'd/m/Y'); ?>
+        <?php print $name; ?> <?php print format_date($node->created, 'custom', 'd/m/Y'); ?>
         </span>
       <?php endif; ?>
 
