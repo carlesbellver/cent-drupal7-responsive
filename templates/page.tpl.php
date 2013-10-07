@@ -66,7 +66,7 @@
 ?>
 <div id="wrapper">
   <header id="header" class="clearfix">
-    <?php if (theme_get_setting('image_logo','responsive_blog')): ?>
+    <?php if (theme_get_setting('image_logo','cent_drupal7_responsive')): ?>
       <?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a></div><?php endif; ?>
@@ -80,12 +80,12 @@
         <?php if ($site_slogan): ?><h2 id="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
       </hgroup>
     <?php endif; ?>
-    <?php if (theme_get_setting('socialicon_display', 'responsive_blog')): ?>
+    <?php if (theme_get_setting('socialicon_display', 'cent_drupal7_responsive')): ?>
         <?php 
-        $twitter_url = check_plain(theme_get_setting('twitter_url', 'responsive_blog')); 
-        $facebook_url = check_plain(theme_get_setting('facebook_url', 'responsive_blog')); 
-        $google_plus_url = check_plain(theme_get_setting('google_plus_url', 'responsive_blog')); 
-        $pinterest_url = check_plain(theme_get_setting('pinterest_url', 'responsive_blog'));
+        $twitter_url = check_plain(theme_get_setting('twitter_url', 'cent_drupal7_responsive')); 
+        $facebook_url = check_plain(theme_get_setting('facebook_url', 'cent_drupal7_responsive')); 
+        $google_plus_url = check_plain(theme_get_setting('google_plus_url', 'cent_drupal7_responsive')); 
+        $pinterest_url = check_plain(theme_get_setting('pinterest_url', 'cent_drupal7_responsive'));
         ?>
       <div class="social-profile">
         <ul>
@@ -143,35 +143,35 @@
     <div id="primary">
       <section id="content" role="main">
         <?php if ($is_front): ?>
-        <?php if (theme_get_setting('slideshow_display','responsive_blog')): ?>
+        <?php if (theme_get_setting('slideshow_display','cent_drupal7_responsive')): ?>
         <?php 
-        $slide1_url = check_plain(theme_get_setting('slide1_url','responsive_blog'));
-        $slide2_url = check_plain(theme_get_setting('slide2_url','responsive_blog'));
-        $slide3_url = check_plain(theme_get_setting('slide3_url','responsive_blog'));
-        $slide1_desc = check_markup(theme_get_setting('slide1_desc', 'responsive_blog'), 'full_html'); 
-        $slide2_desc = check_markup(theme_get_setting('slide2_desc', 'responsive_blog'), 'full_html'); 
-        $slide3_desc = check_markup(theme_get_setting('slide3_desc', 'responsive_blog'), 'full_html'); 
+        $slide1_url = check_plain(theme_get_setting('slide1_url','cent_drupal7_responsive'));
+        $slide2_url = check_plain(theme_get_setting('slide2_url','cent_drupal7_responsive'));
+        $slide3_url = check_plain(theme_get_setting('slide3_url','cent_drupal7_responsive'));
+        $slide1_desc = check_markup(theme_get_setting('slide1_desc', 'cent_drupal7_responsive'), 'full_html'); 
+        $slide2_desc = check_markup(theme_get_setting('slide2_desc', 'cent_drupal7_responsive'), 'full_html'); 
+        $slide3_desc = check_markup(theme_get_setting('slide3_desc', 'cent_drupal7_responsive'), 'full_html'); 
         ?>
         <div id="slider">
           <div id="slider-wrap">
             <div class="slides displayblock">
-              <a href="<?php print url($slide1_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/images/slide-image-1.jpg'; ?>" class="pngfix"/></a>
+              <a href="<?php print url($slide1_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/images/slide-image-1.jpg'; ?>" class="pngfix"/></a>
               <?php if($slide1_desc) { print '<div class="featured-text">' . $slide1_desc . '</div>'; } ?><!-- .featured-text -->
             </div> <!-- .slides -->
 
             <div class="slides displaynone">
-              <a href="<?php print url($slide2_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/images/slide-image-2.jpg'; ?>" class="pngfix"/></a>
+              <a href="<?php print url($slide2_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/images/slide-image-2.jpg'; ?>" class="pngfix"/></a>
               <?php if($slide1_desc) { print '<div class="featured-text">' . $slide2_desc . '</div>'; } ?><!-- .featured-text -->
             </div> <!-- .slides -->
 
             <div class="slides displaynone">
-              <a href="<?php print url($slide3_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/images/slide-image-3.jpg'; ?>" class="pngfix"/></a>
+              <a href="<?php print url($slide3_url); ?>"><img width="644" height="320" src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/images/slide-image-3.jpg'; ?>" class="pngfix"/></a>
               <?php if($slide1_desc) { print '<div class="featured-text">' . $slide3_desc . '</div>'; } ?><!-- .featured-text -->
             </div> <!-- .slides -->
           </div>
           <div id="nav-slider">
-            <div class="nav-previous"><img class="pngfix" src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/images/previous.png'; ?>" alt="next slide"></div>
-            <div class="nav-next"><img class="pngfix" src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/images/next.png'; ?>" alt="next slide"></div>
+            <div class="nav-previous"><img class="pngfix" src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/images/previous.png'; ?>" alt="next slide"></div>
+            <div class="nav-next"><img class="pngfix" src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/images/next.png'; ?>" alt="next slide"></div>
           </div>
         </div>
         <?php endif; ?>

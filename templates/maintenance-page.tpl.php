@@ -18,7 +18,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <!--[if lt IE 9]><script src="<?php print base_path() . drupal_get_path('theme', 'responsive_blog') . '/js/html5.js'; ?>"></script><![endif]-->
+  <!--[if lt IE 9]><script src="<?php print base_path() . drupal_get_path('theme', 'cent_drupal7_responsive') . '/js/html5.js'; ?>"></script><![endif]-->
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -26,7 +26,7 @@
 
 <div id="wrapper">
   <header id="header" class="clearfix">
-    <?php if (theme_get_setting('image_logo','responsive_blog')): ?>
+    <?php if (theme_get_setting('image_logo','cent_drupal7_responsive')): ?>
       <?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a></div><?php endif; ?>

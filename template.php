@@ -3,7 +3,7 @@
  * Implements hook_html_head_alter().
  * This will overwrite the default meta character type tag with HTML5 version.
  */
-function responsive_blog_html_head_alter(&$head_elements) {
+function cent_drupal7_responsive_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
@@ -12,7 +12,7 @@ function responsive_blog_html_head_alter(&$head_elements) {
 /**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
-function responsive_blog_breadcrumb($variables) {
+function cent_drupal7_responsive_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Use CSS to hide titile .element-invisible.
@@ -24,18 +24,18 @@ $breadcrumb[] = drupal_get_title();
   }
 }
 
-function responsive_blog_preprocess_html(&$vars) {
+function cent_drupal7_responsive_preprocess_html(&$vars) {
   // Add body classes for custom design options
-  $colors = theme_get_setting('color_scheme', 'responsive_blog');
+  $colors = theme_get_setting('color_scheme', 'cent_drupal7_responsive');
   $classes = explode(" ", $colors);
   for($i=0; $i<count($classes); $i++){
     $vars['classes_array'][] = $classes[$i];
   }
-  $sidebar_layout = theme_get_setting('sidebar_layout', 'responsive_blog');
+  $sidebar_layout = theme_get_setting('sidebar_layout', 'cent_drupal7_responsive');
   if($sidebar_layout == 'left_sidebar') {
     $vars['classes_array'][] = 'left-sidebar';
   }
-  $sidebar_width = theme_get_setting('sidebar_width', 'responsive_blog');
+  $sidebar_width = theme_get_setting('sidebar_width', 'cent_drupal7_responsive');
   if($sidebar_width == 'wide_sidebar') {
     $vars['classes_array'][] = 'wide-sidebar';
   }
@@ -44,7 +44,7 @@ function responsive_blog_preprocess_html(&$vars) {
 /**
  * Override or insert variables into the page template.
  */
-function responsive_blog_preprocess_page(&$vars) {
+function cent_drupal7_responsive_preprocess_page(&$vars) {
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
@@ -82,7 +82,7 @@ function responsive_blog_preprocess_page(&$vars) {
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
-function responsive_blog_menu_local_tasks(&$variables) {
+function cent_drupal7_responsive_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
@@ -103,7 +103,7 @@ function responsive_blog_menu_local_tasks(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function responsive_blog_preprocess_node(&$variables) {
+function cent_drupal7_responsive_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
@@ -111,7 +111,7 @@ function responsive_blog_preprocess_node(&$variables) {
   $variables['date'] = t('!datetime', array('!datetime' =>  date('l, j F Y', $variables['created'])));
 }
 
-function responsive_blog_page_alter($page) {
+function cent_drupal7_responsive_page_alter($page) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(
     '#type' => 'html_tag',
@@ -127,14 +127,14 @@ function responsive_blog_page_alter($page) {
 /**
  * Add css for color style.
  */
-if (theme_get_setting('color_scheme', 'responsive_blog') == 'dark') {
-  drupal_add_css(drupal_get_path('theme', 'responsive_blog') . '/css/color-schemes.css');
+if (theme_get_setting('color_scheme', 'cent_drupal7_responsive') == 'dark') {
+  drupal_add_css(drupal_get_path('theme', 'cent_drupal7_responsive') . '/css/color-schemes.css');
 }
 
 /**
  * Add javascript files for front-page jquery slideshow.
  */
 if (drupal_is_front_page()) {
-  drupal_add_js(drupal_get_path('theme', 'responsive_blog') . '/js/jquery.cycle.all.min.js');
-  drupal_add_js(drupal_get_path('theme', 'responsive_blog') . '/js/slide.js');
+  drupal_add_js(drupal_get_path('theme', 'cent_drupal7_responsive') . '/js/jquery.cycle.all.min.js');
+  drupal_add_js(drupal_get_path('theme', 'cent_drupal7_responsive') . '/js/slide.js');
 }

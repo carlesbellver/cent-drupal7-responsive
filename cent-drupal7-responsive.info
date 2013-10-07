@@ -48,6 +48,6 @@ settings[slide3_url]  = "node/3"
 ; Information added by drupal.org packaging script on 2013-09-02
 version = "7.x-1.7"
 core = "7.x"
-project = "cent-drupal7-responsive"
+project = "cent_drupal7_responsive"
 datestamp = "1381130112"
 
