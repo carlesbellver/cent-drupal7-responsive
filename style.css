@@ -252,12 +252,12 @@ cite, em, i {
 }
 blockquote {
   font-family: Georgia, "Bitstream Charter", serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
   margin: 0 3em;
 }
 blockquote em, blockquote i, blockquote cite {
-  font-style: normal;
+  font-style: italic;
 }
 blockquote cite {
   color: #666;
