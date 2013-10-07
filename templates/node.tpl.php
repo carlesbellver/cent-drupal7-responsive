@@ -86,7 +86,7 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
   
-      <?php if ($display_submitted): ?>
+      <?php if (!$page and $display_submitted): ?>
         <span class="submitted">
         <?php print t('Posted by') . ' ' . $name; ?> <?php print t('on') . ' ' . $date; ?>
         </span>
