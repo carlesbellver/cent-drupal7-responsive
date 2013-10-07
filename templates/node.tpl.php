@@ -88,7 +88,7 @@
   
       <?php if ($display_submitted): ?>
         <span class="submitted">
-        <a title="permalink" href="<?php print $node_url; ?>">#</a> <?php print $name; ?> <?php print strtolower(format_date($node->created, 'custom', 'j-F-Y')); ?>
+        <a title="permalink" href="<?php print $node_url; ?>">#</a> <?php print $name; ?> <?php print strtolower(format_date($created, 'custom', 'j/F/Y')); ?>
         </span>
       <?php endif; ?>
 
