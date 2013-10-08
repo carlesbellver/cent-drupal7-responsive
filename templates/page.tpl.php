@@ -148,9 +148,9 @@
         $slide1_url = check_plain(theme_get_setting('slide1_url','cent_drupal7_responsive'));
         $slide2_url = check_plain(theme_get_setting('slide2_url','cent_drupal7_responsive'));
         $slide3_url = check_plain(theme_get_setting('slide3_url','cent_drupal7_responsive'));
-        $slide1_desc = check_markup(theme_get_setting('slide1_desc', 'cent_drupal7_responsive'), 'full_html'); 
-        $slide2_desc = check_markup(theme_get_setting('slide2_desc', 'cent_drupal7_responsive'), 'full_html'); 
-        $slide3_desc = check_markup(theme_get_setting('slide3_desc', 'cent_drupal7_responsive'), 'full_html');
+        $slide1_desc = check_markup(theme_get_setting('slide1_desc', 'cent_drupal7_responsive')); 
+        $slide2_desc = check_markup(theme_get_setting('slide2_desc', 'cent_drupal7_responsive')); 
+        $slide3_desc = check_markup(theme_get_setting('slide3_desc', 'cent_drupal7_responsive'));
         $slide1_text = theme_get_setting('slide1_desc', 'cent_drupal7_responsive');
         $slide2_text = theme_get_setting('slide2_desc', 'cent_drupal7_responsive');
         $slide3_text = theme_get_setting('slide3_desc', 'cent_drupal7_responsive');
