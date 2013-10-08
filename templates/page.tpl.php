@@ -219,8 +219,8 @@
     </div>
 
     <div id="bottom" class="clearfix">
-      <div class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></div>
-      <div class="credit"><?php print t('Theme by'); ?>  <a href="http://www.devsaran.com" target="_blank">Devsaran</a></div>
+      <div class="copyright"><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a> <?php echo date("Y"); ?></div>
+      <div class="credit"><?php print t('Theme based on'); ?>  <a href="https://drupal.org/project/responsive_blog">Responsive Blog</a></div>
     </div>
   </footer>
 
