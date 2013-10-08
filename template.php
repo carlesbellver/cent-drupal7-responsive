@@ -1,4 +1,9 @@
 <?php
+
+function cent_drupal7_responsive_preprocess_html(&$vars) {
+        drupal_add_js('http://cent.uji.es/pub/sites/all/libraries/flowplayer/flowplayer.min.js');
+}
+
 /**
  * Implements hook_html_head_alter().
  * This will overwrite the default meta character type tag with HTML5 version.
