@@ -218,7 +218,7 @@ ul, ol {
   margin: 0 0 1em 1.5em;
 }
 ul {
-  list-style: disc;
+  list-style: square;
 }
 ol {
   list-style-type: decimal;
@@ -1745,6 +1745,10 @@ body.cke_editable {
   background: #fff;
 }
 
-.field-name-field-url {
+div.field {
+	margin: 0.25em 0;
+}
+
+div.field-name-field-url {
   word-wrap: break-word;
 }
