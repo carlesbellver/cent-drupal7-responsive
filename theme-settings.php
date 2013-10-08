@@ -29,7 +29,7 @@ function cent_drupal7_responsive_form_system_theme_settings_alter(&$form, &$form
     '#description'   => t('Select a predesigned color scheme.'),
     '#options'       => array(
       'white' => t('White'),
-      'dark' => t('Dark'),
+      'blue' => t('Blue'),
      ),
   );
   $form['cent_drupal7_responsive_settings']['layout'] = array(

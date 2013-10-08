@@ -168,7 +168,8 @@ body {
     border-radius: 5px;
 }
 a {
-  color: #1982d1;
+  /* color: #1982d1; */
+  color: rgb(80, 69, 119);
   text-decoration: none;
 }
 a:focus,
