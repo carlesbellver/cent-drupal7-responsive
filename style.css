@@ -1139,6 +1139,10 @@ ol.search-results { padding-left: 0; }
   margin-bottom: 2px;
 }
 
+.submitted a {
+  color: #383838;
+}
+
 .links li a {
   background-color: #E7E5E3;
   color: #100100;
