@@ -127,7 +127,7 @@ function cent_drupal7_responsive_page_alter($page) {
 /**
  * Add css for color style.
  */
-if (theme_get_setting('color_scheme', 'cent_drupal7_responsive') == 'dark') {
+if (theme_get_setting('color_scheme', 'cent_drupal7_responsive') == 'blue') {
   drupal_add_css(drupal_get_path('theme', 'cent_drupal7_responsive') . '/css/color-schemes.css');
 }
 
