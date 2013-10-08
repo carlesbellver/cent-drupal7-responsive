@@ -522,6 +522,7 @@ td{
 }
 
 #slider-wrap .featured-text {
+	font-size: 1.5em;
     color: #FFFFFF;
     padding: 0 11px 10px;
 }
