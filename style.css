@@ -1757,3 +1757,7 @@ div.field {
 div.field-name-field-url {
   word-wrap: break-word;
 }
+
+div.field-name-flowplayer-draft a#player {
+	max-width: 576px !important;
+}
