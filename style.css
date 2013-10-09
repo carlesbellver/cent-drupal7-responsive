@@ -609,19 +609,27 @@ td{
 }
 
 .node-teaser img {
-  border: 1px solid #CCCCCC;
+  /* border: 1px solid #CCCCCC;
   padding: 6px;
   height: auto;
   max-width: 97.4%;
   margin: 0.5em 1em 0.5em 0;
-  float: left;
+  float: left; */
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
 }
 .page-node #content-wrap img {
-  border: 1px solid #CCCCCC;
+  /* border: 1px solid #CCCCCC;
   padding: 6px;
   height: auto;
   max-width: 97.4%;
-  margin: 0.5em 1em 0.5em 0;
+  margin: 0.5em 1em 0.5em 0; */
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .node-teaser p {
