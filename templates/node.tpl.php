@@ -86,9 +86,9 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
   
-      <?php if ($type != 'page' and $display_submitted): ?>
+      <?php if ($display_submitted): ?>
         <span class="submitted">
-        <a title="permalink" href="<?php print $node_url; ?>"># <?php print strtolower(format_date($created, 'custom', 'j F Y')); ?></a>
+        <a title="permalink" href="<?php print $node_url; ?>"># <?php print strtolower(format_date($created, 'custom', 'j F Y H:i')); ?></a>
         </span>
       <?php endif; ?>
 
