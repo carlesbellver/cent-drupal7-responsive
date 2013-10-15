@@ -255,7 +255,8 @@ blockquote {
   font-style: normal;
   font-weight: normal;
   margin: 0 3em;
-  background: url("images/blockquote-bg.jpg") no-repeat right top;
+  padding-left: 36px;
+  background: url("images/blockquote-bg.jpg") no-repeat left top;
 }
 blockquote em, blockquote i, blockquote cite {
   font-style: italic;
