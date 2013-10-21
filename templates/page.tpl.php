@@ -68,11 +68,12 @@
   <header id="header" class="clearfix">
     <?php if (theme_get_setting('image_logo','cent_drupal7_responsive')): ?>
       <?php if ($logo): ?>
-		<?php if (theme_get_setting('image_uji_logo','cent_drupal7_responsive')): ?>
-		  <a href="http://www.uji.es" title="Universitat Jaume I"><img src="http://cent.uji.es/pub/sites/all/themes/cent_drupal7_responsive/Logo-UJI-50.png" alt="Universitat Jaume I" /></a>
-		<?php endif; ?>
-      	<div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a></div>
+      	<div id="site-logo">
+      	<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <?php if (theme_get_setting('image_uji_logo','cent_drupal7_responsive')): ?>
+          <a href="http://www.uji.es" title="Universitat Jaume I"><img src="http://cent.uji.es/pub/sites/all/themes/cent_drupal7_responsive/Logo-UJI-50.png" alt="Universitat Jaume I" /></a>
+        <?php endif; ?>
+      	</div>
       <?php endif; ?>
     <?php else: ?>
       <hgroup id="site-name-wrap">
