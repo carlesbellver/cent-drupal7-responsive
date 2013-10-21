@@ -397,7 +397,10 @@ td{
   margin: 0 3%;
   padding: 2.5em 0;
 }
-
+#header #site-logo .uji-logo{ 
+  margin: 0 3%;
+  padding: 2.5em 0;
+}
 /* =Menu
 -------------------------------------------------------------- */
 

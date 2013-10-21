@@ -70,7 +70,7 @@
       <?php if ($logo): ?>
       	<div id="site-logo">
 <?php if (theme_get_setting('image_uji_logo','cent_drupal7_responsive')): ?>
-  <a href="http://www.uji.es" title="Universitat Jaume I"><img src="http://cent.uji.es/pub/sites/all/themes/cent_drupal7_responsive/Logo-UJI-50.png" alt="Universitat Jaume I" /></a>
+  <span class="uji-logo"><a href="http://www.uji.es" title="Universitat Jaume I"><img src="http://cent.uji.es/pub/sites/all/themes/cent_drupal7_responsive/Logo-UJI-50.png" alt="Universitat Jaume I" /></a></span>
 <?php endif; ?>
       	<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       	</div>
