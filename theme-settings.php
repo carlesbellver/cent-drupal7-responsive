@@ -59,6 +59,12 @@ function cent_drupal7_responsive_form_system_theme_settings_alter(&$form, &$form
       'wide_sidebar' => t('Wide Sidebar'),
      ),
   );
+  $form['cent_drupal7_responsive_settings']['image_uji_logo'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show <strong>UJI logo</strong>'),
+    '#default_value' => theme_get_setting('image_uji_logo','cent_drupal7_responsive'),
+    '#description'   => t("Check this option to show institutions' logo in page. Uncheck to not show."),
+  );
   $form['cent_drupal7_responsive_settings']['image_logo'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show <strong>Image Logo</strong> instead of text logo in a page'),
