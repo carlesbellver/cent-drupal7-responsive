@@ -66,6 +66,7 @@
 ?>
 <div id="wrapper">
   <header id="header" class="clearfix">
+  	<div id="logos">
 	<?php if (theme_get_setting('image_uji_logo','cent_drupal7_responsive')): ?>
 	  <div id="uji-logo"><a href="http://www.uji.es" title="Universitat Jaume I">
 	    <img src="http://cent.uji.es/pub/sites/all/themes/cent_drupal7_responsive/Logo-UJI-50.png" alt="Universitat Jaume I" />
@@ -85,6 +86,7 @@
         <?php if ($site_slogan): ?><h2 id="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
       </hgroup>
     <?php endif; ?>
+    </div>
     <?php if (theme_get_setting('socialicon_display', 'cent_drupal7_responsive')): ?>
         <?php 
         $twitter_url = check_plain(theme_get_setting('twitter_url', 'cent_drupal7_responsive')); 
