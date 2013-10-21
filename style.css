@@ -393,6 +393,10 @@ td{
   height: auto;
   max-width: 100%;
 }
+#header #uji-logo { 
+  margin: 0 3%;
+  padding: 2.5em 0;
+}
 #header #site-logo { 
   margin: 0 3%;
   padding: 2.5em 0;
